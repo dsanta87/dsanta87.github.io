@@ -98,11 +98,13 @@ footer {
   @include box_sizing;
 }
 
+.img-circle {
+  border-radius: 50%;
+  border: 2px solid #777;
+}
+
 /* Sidebar */
 asside{
-  section.user-info{
-    margin-top: 20px;
-  }
   section{
     padding: 10px, 0;
     margin-top: 20px;
@@ -123,13 +125,6 @@ asside{
       margin-top: 0px;
     }
   }
-}
-.gravatar {
-  float: left;
-  margin-right: 10px;
-}
-.gravatar_edit {
-  margin-top: 15px;
 }
 
 /* Forms */
