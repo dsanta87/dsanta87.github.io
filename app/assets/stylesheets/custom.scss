@@ -98,9 +98,13 @@ footer {
   @include box_sizing;
 }
 
-.img-circle {
+.img-circle{
   border-radius: 50%;
   border: 2px solid #777;
+}
+
+.img-circle-bg{
+  width: 50%;
 }
 
 /* Sidebar */
