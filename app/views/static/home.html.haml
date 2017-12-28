@@ -1,16 +1,17 @@
-%h1 Static#home
+%h1 Nos casamos!!!
+%h3 22 / 9 / 2018
 %p Find me in app/views/static/home.html.haml
 .container
   .col-md-4.section.h1.img-circle-bg
     %p
     %img.img-circle{:src => "https://pbs.twimg.com/profile_images/689975848372473856/ppLiaj1S_200x200.jpg", :style => "box-shadow: 0px 0px 100px #888;"}/
     David
-    %p.h4
-      = render "layouts/david"
+    = render "layouts/david"
 
   .col-md-4.section.h1.img-circle-bg
     %p
     %img.img-circle{:src => "https://pbs.twimg.com/profile_images/378800000055498279/f512937d2e317ca2f859bb5fb0ccf1f4_200x200.jpeg", :style => "box-shadow: 0px 0px 100px #888;"}/
     Paula
-    %p.h4
-      = render "layouts/pauli"
+    = render "layouts/pauli"
+.container
+  = render "layouts/pareja"
