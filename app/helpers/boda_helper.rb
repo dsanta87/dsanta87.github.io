@@ -1,0 +1,2 @@
+module BodaHelper
+end
