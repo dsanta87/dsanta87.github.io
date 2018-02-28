@@ -51,7 +51,7 @@ h3 {
   text-align: center;
 }
 p{
-  font-size: 1.1em; line-height: 1.7em;
+  line-height: 1.1;
 }
 
 /* header */
@@ -67,6 +67,10 @@ header {
     color: white;
     text-decoration: none;
   }
+}
+.header-links{
+  float: right;
+  font-size: 0.7em;
 }
 
 /* footer */
