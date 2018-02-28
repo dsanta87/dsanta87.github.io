@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>Cómo llegar</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var restaurant = {lat: 38.2733346, lng: -0.6683223};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: restaurant
+        });
+        var marker = new google.maps.Marker({
+          position: restaurant,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDt7lQtGAoHwbyGSFkiFia2taPzqi9i_Rg&callback=initMap">
+    </script>
+  </body>
+</html>
