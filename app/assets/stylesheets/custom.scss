@@ -13,6 +13,7 @@ $gray-medium-light: #eaeaea;
 /* universal */
 body {
   padding-top: 60px;
+  background-color: gray-medium-light;
 }
 section {
   overflow: auto;
@@ -44,6 +45,10 @@ h2 {
   text-align: center;
   font-weight: normal;
   color: $gray-light;
+}
+
+h3 {
+  text-align: center;
 }
 p{
   font-size: 1.1em; line-height: 1.7em;
@@ -98,9 +103,27 @@ footer {
   @include box_sizing;
 }
 
-.img-circle {
+.img-circle{
   border-radius: 50%;
   border: 2px solid #777;
+}
+
+.img-circle-bg{
+  width: 50%;
+}
+
+/* Home */
+#home{
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1024px;
+  .container{
+    top: 33%;
+    color: white;
+    position: relative;
+    vertical-align: middle;
+  }
 }
 
 /* Sidebar */

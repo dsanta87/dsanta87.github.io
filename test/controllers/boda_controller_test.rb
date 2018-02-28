@@ -1,13 +1,13 @@
 require 'test_helper'
 
-class StaticControllerTest < ActionDispatch::IntegrationTest
+class BodaControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
-    get static_home_url
+    get boda_home_url
     assert_response :success
   end
 
   test "should get help" do
-    get static_help_url
+    get boda_help_url
     assert_response :success
   end
 
