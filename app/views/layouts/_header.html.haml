@@ -1,6 +1,6 @@
 %header.navbar.navbar-fixed-top.navbar-inverse
   .h2.container
-    David & Paula
+    Paula & David
     .header-links
       - %w(Inicio Índice Lugar Ayuda).each do |site|
         - case site
@@ -12,5 +12,5 @@
           - site_path = boda_place_path
         - when "Ayuda"
           - site_path = boda_help_path
-          
+
         = link_to site, site_path
