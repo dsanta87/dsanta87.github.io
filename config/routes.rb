@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  root 'boda#home'
   get 'boda/home'
-  get 'boda/index'
+  get 'boda/who_we_are'
   get 'boda/place'
   get 'boda/help'
 

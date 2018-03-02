@@ -2,12 +2,12 @@
   .h2.container
     Paula & David
     .header-links
-      - %w(Inicio Índice Lugar Ayuda).each do |site|
+      - %w(Inicio Nosotros Lugar Ayuda).each do |site|
         - case site
         - when "Inicio"
           - site_path = boda_home_path
-        - when "Índice"
-          - site_path = boda_index_path
+        - when "Nosotros"
+          - site_path = boda_who_we_are_path
         - when "Lugar"
           - site_path = boda_place_path
         - when "Ayuda"
