@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root 'boda#home'
   get 'boda/home'
   get 'boda/who_we_are'
