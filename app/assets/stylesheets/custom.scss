@@ -62,6 +62,7 @@ header {
   color: white;
   padding-top: 9px;
   font-weight: bold;
+  width: 100%;
   &:hover{
     color: white;
     text-decoration: none;
@@ -71,12 +72,6 @@ header {
   float: right;
   font-size: 0.7em;
 }
-
-// .header-text{
-//   color: red;
-//   font-size: 10em;
-//   margin-right: 10px;
-// }
 
 /* footer */
 footer {
@@ -124,13 +119,14 @@ footer {
 /* Home */
 #home{
   // background-image: url(background.jpg);
-  background-image: url(https://github.com/dsanta87/dsanta87.github.io/blob/master/app/assets/stylesheets/fushimi-inari.jpg?raw=true);
+  background-image: url(fushimi-inari.jpg);
+  // background-image: url(https://github.com/dsanta87/dsanta87.github.io/blob/master/app/assets/stylesheets/fushimi-inari.jpg?raw=true);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto;
   height: 1024px;
   .container{
     top: 33%;
-    color: white;
+    color: #428bca;
     position: relative;
     vertical-align: middle;
   }
