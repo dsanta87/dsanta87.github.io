@@ -13,7 +13,6 @@ $gray-medium-light: #eaeaea;
 /* universal */
 body {
   padding-top: 60px;
-  background-color: gray-medium-light;
 }
 section {
   overflow: auto;
@@ -124,7 +123,8 @@ footer {
 
 /* Home */
 #home{
-  background-image: url(background.jpg);
+  // background-image: url(background.jpg);
+  background-image: url(https://github.com/dsanta87/dsanta87.github.io/blob/master/app/assets/stylesheets/fushimi-inari.jpg?raw=true);
   background-repeat: no-repeat;
   background-size: cover;
   height: 1024px;
