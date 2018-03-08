@@ -7,6 +7,10 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     callback_from :twitter
   end
 
+  def instagram
+    callback_from :instagram
+  end
+
   private
 
   def callback_from(provider)
