@@ -10,7 +10,7 @@ class User < ApplicationRecord
 
   def self.find_for_oauth(auth)
     user = User.where(uid: auth.uid, provider: auth.provider).first
-    byebug
+    # byebug
 
     unless user
       user = User.create(
@@ -34,8 +34,4 @@ class User < ApplicationRecord
   end
 
   private
-
-  def self.dummy_email(auth)
-    "#{auth.uid}-#{auth.provider}@example.com"
-           end
 end
