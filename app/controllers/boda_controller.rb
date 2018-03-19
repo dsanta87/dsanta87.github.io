@@ -4,4 +4,7 @@ class BodaController < ApplicationController
 
   def help
   end
+
+  def messages
+  end
 end
