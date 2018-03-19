@@ -12,8 +12,6 @@ class User < ApplicationRecord
     # first exists check
     user = User.where(uid: auth.uid, provider: auth.provider).first
 
-    byebug
-
     # second exists check
     if user.nil? && auth.provider != "instagram"
       user = User.select{ |u| u.email == auth.info.email.downcase}.first
