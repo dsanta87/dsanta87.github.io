@@ -16,7 +16,7 @@
         = link_to site, site_path
   .header_text.pull-right
     - if user_signed_in?
-      = current_user.email
+      = current_user.name + " || " + current_user.email
       = link_to "Salir", destroy_user_session_path, method: :delete
     - else
       = link_to "Entrar", new_user_session_path
