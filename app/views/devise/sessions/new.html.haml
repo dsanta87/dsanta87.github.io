@@ -1,6 +1,8 @@
 - provide(:title, "Entrar")
-#user-session.container
-  %h2 Entrar
+.container
+  .h1 Entrar
+  %p.h4 Si ya tienes cuenta
+
   = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
     .field
       = f.label :email
@@ -16,4 +18,7 @@
         = f.label :remember_me
     .actions
       = f.submit "Entrar"
+
+    %p.h4 Si aún no tienes cuenta
+
   = render "devise/shared/links"
