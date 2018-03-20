@@ -1,0 +1,7 @@
+- @messages = Message.all
+- @message = Message.new
+.container
+  .h1 Mensajes
+
+= render 'messages/show', message: @messages
+= render 'messages/new', message: @message

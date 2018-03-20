@@ -1,0 +1,11 @@
+#timeline
+  .timeline
+    - count=0;
+    - @messages.each do |msg|
+      - count += 1
+      - if count.odd?
+        .container-timeline.left
+          = render 'messages/content', msg: msg
+      - else
+        .container-timeline.right
+          = render 'messages/content', msg: msg

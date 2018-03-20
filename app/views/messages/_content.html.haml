@@ -1,0 +1,10 @@
+.content
+  %p.pull-right
+    =msg.created_at.to_date
+  %p
+    =msg.body
+  %p.pull-right
+    =msg.user.name
+  - if msg.user == current_user
+    %p
+      =link_to "Borrar", msg, method: :delete, data: {confirm: "¿Seguro que deseas borrarlo?"}

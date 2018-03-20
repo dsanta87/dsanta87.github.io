@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   get 'boda/who_we_are'
   get 'boda/place'
   get 'boda/help'
-  get 'boda/messages'
+
+  resources :messages
 
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
 
