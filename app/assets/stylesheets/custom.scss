@@ -70,11 +70,17 @@ header {
     color: white;
     text-decoration: none;
   }
+  .header-links{
+    float: right;
+    font-size: 0.7em;
+  }
+  .header-text{
+    float: right;
+    font-size: 0.7em;
+    margin-right: 10px;
+  }
 }
-.header-links{
-  float: right;
-  font-size: 0.7em;
-}
+
 
 /* footer */
 footer {

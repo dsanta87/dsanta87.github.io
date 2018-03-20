@@ -2,7 +2,7 @@
   - if current_user.nil?
     Necesitas
     = link_to "identificarte", new_user_session_path
-    para poder dejar un mensaje
+    para poder dejar un mensaje.
   - else
     =form_for @message do |f|
       = f.hidden_field :user_id, value: current_user.id

@@ -2,7 +2,7 @@
   .h2.container
     Paula & David
     .header-links
-      - %w(Inicio Nosotros Lugar Ayuda).each do |site|
+      - %w(Inicio Nosotros Lugar Mensajes).each do |site|
         - case site
         - when "Inicio"
           - site_path = boda_home_path
@@ -10,13 +10,13 @@
           - site_path = boda_who_we_are_path
         - when "Lugar"
           - site_path = boda_place_path
-        - when "Ayuda"
-          - site_path = boda_help_path
+        - when "Mensajes"
+          - site_path = messages_path
 
         = link_to site, site_path
-  .header_text.pull-right
+  .header-text.pull-right
     - if user_signed_in?
-      = current_user.name + " || " + current_user.email
+      = current_user.name
       = link_to "Salir", destroy_user_session_path, method: :delete
     - else
       = link_to "Entrar", new_user_session_path
