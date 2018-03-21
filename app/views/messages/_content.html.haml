@@ -5,9 +5,9 @@
     =msg.body
   %p.pull-right
     - if msg.user.name
-      =msg.user.email
-    - else
       =msg.user.name
+    - else
+      =msg.user.email
   - if msg.user == current_user
     %p
       =link_to "Borrar", msg, method: :delete, data: {confirm: "¿Seguro que deseas borrarlo?"}
