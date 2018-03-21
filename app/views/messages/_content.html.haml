@@ -4,7 +4,7 @@
   %p
     =msg.body
   %p.pull-right
-    - if msg.user.name.empty?
+    - if msg.user.name
       =msg.user.email
     - else
       =msg.user.name
