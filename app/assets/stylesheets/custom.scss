@@ -12,7 +12,7 @@ $gray-medium-light: #eaeaea;
 
 /* universal */
 body {
-  padding-top: 60px;
+  padding-top: 80px;
   background-color: #474e5d;
   color: white;
 }
@@ -28,6 +28,9 @@ textarea {
   h1 {
     margin-bottom: 10px;
   }
+}
+.new-message{
+  padding-bottom: 50px;
 }
 
 /* typography */
